@@ -5,14 +5,24 @@
 
 
 
-	$(document).ready(function(){
+	// $(document).ready(function(){
+  //
+  //   $(".header-right > a").click(function(){
+  //     $(".hamburger-menu").show();
+  //   })
+  //
+  //   $(".close").click(function(){
+  //     $(".hamburger-menu").hide();
+  //   })
+  //
+	// });
 
+  $(document).ready(function(){
     $(".header-right > a").click(function(){
-      $(".hamburger-menu").show();
-    })
+        $(".hamburger-menu").addClass("active");
+      });
 
-    $(".close").click(function(){
-      $(".hamburger-menu").hide();
-    })
-
-	});
+      $(".close").click(function(){
+        $(".hamburger-menu").removeClass("active");
+      });
+  })
